@@ -61,9 +61,9 @@
 }
 
 :root {
-  --bg: #14181A;
-  --bg2: #1A2023;
-  --bg3: #22292C;
+  --bg: #1A140F;
+  --bg2: #211A13;
+  --bg3: #2B2117;
   --paper: #E9DFC8;
   --ink-90: rgba(233,223,200,.92);
   --mut: rgba(233,223,200,.64);
@@ -71,11 +71,11 @@
   --mut3: rgba(233,223,200,.22);
   --line: rgba(233,223,200,.14);
   --line2: rgba(233,223,200,.08);
-  --acc: #4A90A4;
-  --acc-soft: #A8D2DC;
-  --acc-dim: rgba(74,144,164,.4);
-  --gold: #B08D4F;
-  --gold-soft: #D9C08F;
+  --acc: #C17A3D;
+  --acc-soft: #E3B27E;
+  --acc-dim: rgba(193,122,61,.35);
+  --gold: #C9AD73;
+  --gold-soft: #E6D9B0;
   --serif: 'Fraunces', Georgia, serif;
   --sans: 'Archivo', sans-serif;
   --mono: 'Archivo', sans-serif;
@@ -171,7 +171,7 @@ html.js [data-rv="scale"] { transform: scale(.96); }
   transition: background .3s, border-color .3s, height .3s;
   border-bottom: 1px solid transparent;
 }
-.hd.solid { background: rgba(20,24,26,.97); border-bottom-color: var(--line2); }
+.hd.solid { background: rgba(26,20,15,.97); border-bottom-color: var(--line2); }
 .hd-brand { display: flex; align-items: baseline; gap: 14px; text-decoration: none; color: var(--paper); }
 .hd-brand b { font-family: var(--serif); font-weight: 400; font-size: 27px; letter-spacing: .01em; border-bottom: 2px solid var(--gold-soft); padding-bottom: 1px; }
 .hd-brand span { font-family: var(--mono); font-size: 9px; letter-spacing: .04em; color: var(--mut2); }
@@ -240,7 +240,7 @@ html.js [data-rv="scale"] { transform: scale(.96); }
 html.js .hero-img img { animation: kenburns 18s ease-out forwards; }
 @keyframes kenburns { from { transform: scale(1.08); } to { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { html.js .hero-img img { animation: none; } }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,26,.62) 0%, rgba(20,24,26,.08) 38%, rgba(20,24,26,.86) 100%); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,20,15,.62) 0%, rgba(26,20,15,.08) 38%, rgba(26,20,15,.86) 100%); }
 .hero-txt { position: absolute; left: var(--pad); right: var(--pad); bottom: clamp(48px, 7vh, 84px); z-index: 2; }
 .hero-txt h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(56px, 8.6vw, 156px); line-height: .94; letter-spacing: -.016em; margin: 20px 0 22px; max-width: 13ch; }
 .hero-txt h1 em { font-style: italic; color: var(--acc-soft); }
@@ -299,13 +299,13 @@ html.js .hero-scroll .tick::after { content: ""; position: absolute; left: 0; to
 .fam-card:hover .n { color: var(--gold-soft); }
 .fam-card .go { position: absolute; top: 14px; right: 18px; z-index: 2; font-size: 20px; color: var(--paper); opacity: 0; transform: translateX(-8px); transition: opacity .3s, transform .3s; }
 .fam-card:hover .go { opacity: 1; transform: none; }
-.fam-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,26,.18) 0%, transparent 40%, rgba(20,24,26,.72) 100%); }
+.fam-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,20,15,.18) 0%, transparent 40%, rgba(26,20,15,.72) 100%); }
 
 /* ---------- refs ---------- */
 .ref-feat { position: relative; overflow: hidden; min-height: 520px; display: block; text-decoration: none; color: var(--paper); }
 .ref-feat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.85); transition: transform .7s cubic-bezier(.2,.6,.3,1); }
 .ref-feat:hover img { transform: scale(1.03); }
-.ref-feat::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(20,24,26,.85) 100%); }
+.ref-feat::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(26,20,15,.85) 100%); }
 .ref-feat .cap { position: absolute; left: 28px; bottom: 26px; right: 28px; z-index: 2; }
 .ref-feat .cap h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 2.4vw, 34px); margin: 8px 0 0; }
 .ref-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--paper); transition: padding-left .25s; }
@@ -385,11 +385,11 @@ html.js .atelier-mark .pulse { animation: pulse 2.6s ease-out infinite; transfor
 .cta .btn { background: var(--bg); color: var(--paper); border-color: var(--bg); }
 .cta .btn:hover { background: transparent; color: var(--bg); border-color: var(--bg); }
 .cta .btn--ghost { background: transparent; color: var(--bg); border-color: var(--bg); }
-.cta .btn--ghost:hover { background: rgba(20,24,26,.12); color: var(--bg); }
+.cta .btn--ghost:hover { background: rgba(26,20,15,.12); color: var(--bg); }
 .cta::after {
   content: "FCB"; position: absolute; right: clamp(-40px,4vw,20px); top: 50%; transform: translateY(-50%);
   font-family: var(--serif); font-weight: 600; font-size: clamp(140px,20vw,320px); line-height: 1;
-  color: rgba(20,24,26,.045); pointer-events: none; white-space: nowrap; z-index: 0;
+  color: rgba(26,20,15,.045); pointer-events: none; white-space: nowrap; z-index: 0;
 }
 .cta > * { position: relative; z-index: 1; }
 .foot { border-top: 1px solid var(--line); padding: clamp(40px, 5vw, 64px) var(--pad) 32px; background: var(--bg2); }
@@ -416,7 +416,7 @@ html.js .atelier-mark .pulse { animation: pulse 2.6s ease-out infinite; transfor
 
 /* liquidation band */
 .liq-band { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin: 0 var(--pad);
-  border-left: 3px solid var(--acc); background: rgba(74,144,164,.09); padding: 16px 22px; }
+  border-left: 3px solid var(--acc); background: rgba(193,122,61,.09); padding: 16px 22px; }
 .liq-band b { font-family: var(--serif); font-style: italic; font-size: 16px; color: var(--acc-soft); font-weight: 500; }
 .liq-band span { font-size: 14px; color: var(--mut); }
 .liq-band a { margin-left: auto; }
@@ -475,7 +475,7 @@ html.js .draw-stage.rv-in .draw-bit { opacity: 1; transition: opacity .5s 1s; }
 }
 
 /* au-delà du catalogue — renvoi sur-mesure */
-.beyond { border-left: 3px solid var(--acc); background: rgba(74,144,164,.08); padding: 22px 24px; margin-top: 26px; }
+.beyond { border-left: 3px solid var(--acc); background: rgba(193,122,61,.08); padding: 22px 24px; margin-top: 26px; }
 .beyond p { margin: 0 0 12px; font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--ink-90); line-height: 1.45; }
 
 /* forms */
@@ -651,7 +651,7 @@ html.js .draw-stage.rv-in .draw-bit { opacity: 1; transition: opacity .5s 1s; }
 .hero-split-coord {
   position: absolute; left: 24px; right: 24px; bottom: 24px; color: var(--paper);
   font-family: var(--mono); font-size: 11px; line-height: 1.9;
-  background: rgba(20,24,26,.55); padding: 14px 18px; border-left: 2px solid var(--gold-soft);
+  background: rgba(26,20,15,.55); padding: 14px 18px; border-left: 2px solid var(--gold-soft);
 }
 @media (max-width: 900px) {
   .hero-split { grid-template-columns: 1fr; min-height: auto; }
